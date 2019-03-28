@@ -1,0 +1,11 @@
+{
+  "name": "waterpipes",
+  "version": "1.0.0",
+  "description": "responsive web site for water pipes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Andrews",
+  "license": "MIT"
+}

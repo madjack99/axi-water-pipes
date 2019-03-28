@@ -1,0 +1,8 @@
+$primary-color: #01c1ee;
+$secondary-color: #444;
+
+@mixin button {
+  width: 340px;
+  padding: 10px 0;
+  font-size: 1.5rem;
+}

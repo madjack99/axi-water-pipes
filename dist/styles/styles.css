@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+#main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 535px;
+}
+
+#main-header .angle {
+  width: 85px;
+  background: #01c1ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-header .angle a {
+  font-size: 2rem;
+  margin: auto;
+}
+
+#main-header .header-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: url("../img/pipes-cover.jpg");
+  background-size: cover;
+  padding-left: 120px;
+}
+
+#main-header .header-content .branding {
+  height: 170px;
+  padding: 35px 0;
+}
+
+#main-header .header-content .branding .logo {
+  width: 200px;
+  height: 100px;
+  background: url("../img/axi-pipe.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main-header .header-content h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#main-header .header-content h1 span {
+  color: #01c1ee;
+}
+
+#main-header .header-content .header-buttons {
+  margin-top: 85px;
+}
+
+#main-header .header-content .header-buttons .contact-number {
+  width: 340px;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid #01c1ee;
+}
+
+#main-header .header-content .header-buttons .help {
+  width: 340px;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  background: #fff;
+  border: none;
+}
+
+main .company-info h2 {
+  text-align: center;
+  padding: 1.5rem 0 1rem;
+}
+
+main .company-info p {
+  padding: 0 200px 30px 200px;
+}
+
+main .goods-carousel .carousel-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .goods-carousel .carousel-titles .title {
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+}
+
+main .goods-carousel .carousel-titles .title.active {
+  border-bottom: 3px solid #01c1ee;
+  font-weight: 600;
+}
+
+main .goods-carousel .m-smart-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50vw 50vw;
+      grid-template-columns: 50vw 50vw;
+  -ms-grid-rows: 600px;
+      grid-template-rows: 600px;
+}
+
+main .goods-carousel .m-smart-item .item-image {
+  background: url("../img/brass-pipe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main .goods-carousel .m-smart-item .item-description {
+  padding: 2rem 4rem 0 2rem;
+}
+
+main .goods-carousel .m-smart-item .item-description .pre-title {
+  color: #444;
+}
+
+main .goods-carousel .m-smart-item .item-description h2 {
+  color: #01a8d0;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+main .goods-carousel .m-smart-item .item-description ul.item-specification {
+  margin: 2rem 0;
+}
+
+main .goods-carousel .m-smart-item .item-description ul.item-specification li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+main .goods-carousel .m-smart-item .item-description ul.item-specification li::after {
+  content: "";
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  border-bottom: 1px dotted #000;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main .goods-carousel .m-smart-item .item-description ul.item-specification li .specification {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+main .goods-carousel .m-smart-item .item-description ul.item-specification li .value {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+/*# sourceMappingURL=styles.css.map */

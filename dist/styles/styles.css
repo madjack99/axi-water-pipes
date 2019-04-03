@@ -18,6 +18,10 @@ ul {
   list-style: none;
 }
 
+button {
+  border: none;
+}
+
 #main-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +91,6 @@ ul {
   font-size: 1.5rem;
   margin-left: 20px;
   background: #fff;
-  border: none;
 }
 
 main .company-info h2 {
@@ -139,7 +142,7 @@ main .goods-carousel .m-smart-item .item-description {
 }
 
 main .goods-carousel .m-smart-item .item-description .pre-title {
-  color: #444;
+  color: #727171;
 }
 
 main .goods-carousel .m-smart-item .item-description h2 {
@@ -180,5 +183,89 @@ main .goods-carousel .m-smart-item .item-description ul.item-specification li .v
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
+}
+
+main .goods-carousel .m-smart-item .item-description .price {
+  display: inline-block;
+  float: left;
+  margin-right: 2rem;
+}
+
+main .goods-carousel .m-smart-item .item-description .price .actual-price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+main .goods-carousel .m-smart-item .item-description .price .old-price {
+  text-decoration: line-through;
+  color: #8c8a8a;
+}
+
+main .goods-carousel .m-smart-item .item-description .price .discount {
+  color: #0bd0fe;
+}
+
+main .goods-carousel .m-smart-item .item-description button {
+  background: #01c1ee;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+main .order-block {
+  margin-top: 1rem;
+  min-height: 200px;
+  background: -webkit-gradient(linear, right bottom, left top, from(#01c1ee), to(#fff));
+  background: linear-gradient(to left top, #01c1ee, #fff);
+}
+
+main .order-block .order-box {
+  padding: 1rem 0;
+  width: 400px;
+  margin: 0 auto;
+}
+
+main .order-block .order-box .order-contact {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .order-block .order-box .order-contact .tel {
+  background: rgba(255, 255, 255, 0);
+  width: 150px;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+main .order-block .order-box .order-contact .send {
+  background: #fff;
+  width: 150px;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+main .benefits h3 {
+  text-align: center;
+  padding: 2rem;
+}
+
+main .benefits .benefits-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+}
+
+main .benefits .benefits-items .benefit-item {
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #727171;
+  border-right: 1px solid #727171;
 }
 /*# sourceMappingURL=styles.css.map */

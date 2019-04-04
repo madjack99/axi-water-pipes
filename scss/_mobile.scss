@@ -1,0 +1,135 @@
+@include mediaMd {
+  #main-header {
+    display: flex;
+    flex-direction: column;
+    height: 535px;
+
+    .angle {
+      width: 100%;
+      background: $primary-color;
+
+      a {
+        font-size: 2rem;
+      }
+    }
+
+    .header-content {
+      flex-grow: 1;
+      background: url("../img/pipes-cover.jpg");
+      background-size: cover;
+      padding-left: 20px;
+
+      .branding {
+        height: 170px;
+
+        .logo {
+          width: 200px;
+          height: 100px;
+          background: url("../img/axi-pipe.png");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      h1 {
+        font-size: 2rem;
+        line-height: 1.5;
+
+        span {
+          color: $primary-color;
+        }
+      }
+
+      .header-buttons {
+        margin-top: 50px;
+
+        .contact-number {
+          @include button;
+          // background: rgba(#fff, 0);
+          background: linear-gradient(to bottom left, $primary-color, #fff);
+          border: 2px solid $primary-color;
+        }
+
+        .help {
+          @include button;
+          margin: 1rem 0 0 0;
+          background: linear-gradient(to top right, $primary-color, #fff);
+        }
+      }
+    }
+  }
+
+  main {
+    .company-info {
+      h2 {
+        text-align: center;
+        padding: 1.5rem 0 1rem;
+      }
+      p {
+        padding: 0 50px 30px 50px;
+      }
+    }
+
+    #carousel {
+      .m-smart-item,
+      .m-evolution-item,
+      .m-art-item {
+        display: grid;
+        grid-template-columns: 100vw;
+      }
+    }
+
+    #order {
+      &.order-block {
+        margin-top: 1rem;
+        min-height: 200px;
+        background: linear-gradient(to left top, $primary-color, #fff);
+
+        .order-box {
+          padding: 1rem 0.5rem;
+          width: 100%;
+          margin: 0;
+
+          .order-contact {
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+
+            .tel {
+              background: rgba(#fff, 0);
+              width: 150px;
+              border: 1px solid #fff;
+              padding: 0.5rem;
+              font-weight: 600;
+            }
+
+            .send {
+              background: #fff;
+              width: 150px;
+              padding: 0.5rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .benefits {
+      h3 {
+        text-align: center;
+        padding: 2rem;
+      }
+      .benefits-items {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .benefit-item {
+          text-align: center;
+          padding: 1.5rem;
+          border-bottom: 1px solid $secondary-color;
+          border-right: 1px solid $secondary-color;
+        }
+      }
+    }
+  }
+}

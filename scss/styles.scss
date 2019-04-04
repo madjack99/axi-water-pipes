@@ -23,7 +23,7 @@ button {
   border: none;
 }
 
-#main-header {
+header {
   display: flex;
   height: 535px;
 
@@ -71,14 +71,15 @@ button {
 
       .contact-number {
         @include button;
-        background: rgba(#fff, 0);
+        // background: rgba(#fff, 0);
+        background: linear-gradient(to bottom left, $primary-color, #fff);
+        margin-right: 20px;
         border: 2px solid $primary-color;
       }
 
       .help {
         @include button;
-        margin-left: 20px;
-        background: #fff;
+        background: linear-gradient(to top right, $primary-color, #fff);
       }
     }
   }
@@ -111,10 +112,11 @@ main {
       }
     }
 
-    .m-smart-item {
+    .m-smart-item,
+    .m-evolution-item,
+    .m-art-item {
       display: grid;
       grid-template-columns: 50vw 50vw;
-      grid-template-rows: 600px;
 
       .item-image {
         background: url("../img/brass-pipe.jpg");
@@ -187,6 +189,34 @@ main {
         }
       }
     }
+
+    .m-evolution-item {
+      .item-image {
+        background: url("../img/tap.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+    .m-art-item {
+      .item-image {
+        background: url("../img/valve.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+    .m-evolution-item,
+    .m-smart-item,
+    .m-art-item {
+      display: none;
+
+      &.visible {
+        display: grid;
+      }
+    }
   }
 
   .order-block {
@@ -239,4 +269,19 @@ main {
       }
     }
   }
+
+  footer {
+    margin-top: 1rem;
+    height: 50px;
+    background: darken($secondary-color, 5);
+    color: #fff;
+    padding-top: 10px;
+
+    div {
+      margin: auto;
+      width: 200px;
+    }
+  }
 }
+
+@import "mobile";

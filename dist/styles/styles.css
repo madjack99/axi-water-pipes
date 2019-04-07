@@ -341,39 +341,17 @@ main footer div {
 
 @media screen and (max-width: 768px) {
   #main-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 535px;
   }
   #main-header .angle {
     width: 100%;
     background: #01c1ee;
   }
-  #main-header .angle a {
-    font-size: 2rem;
-  }
   #main-header .header-content {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    background: url("../img/pipes-cover.jpg");
-    background-size: cover;
     padding-left: 20px;
-  }
-  #main-header .header-content .branding {
-    height: 170px;
-  }
-  #main-header .header-content .branding .logo {
-    width: 200px;
-    height: 100px;
-    background: url("../img/axi-pipe.png");
-    background-repeat: no-repeat;
-    background-position: center;
   }
   #main-header .header-content h1 {
     font-size: 2rem;
@@ -416,18 +394,12 @@ main footer div {
     -ms-grid-columns: 100vw;
         grid-template-columns: 100vw;
   }
-  main #order.order-block {
-    margin-top: 1rem;
-    min-height: 200px;
-    background: -webkit-gradient(linear, right bottom, left top, from(#01c1ee), to(#fff));
-    background: linear-gradient(to left top, #01c1ee, #fff);
-  }
-  main #order.order-block .order-box {
+  main #order .order-box {
     padding: 1rem 0.5rem;
     width: 100%;
     margin: 0;
   }
-  main #order.order-block .order-box .order-contact {
+  main #order .order-box .order-contact {
     padding-top: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -436,34 +408,11 @@ main footer div {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  main #order.order-block .order-box .order-contact .tel {
-    background: rgba(255, 255, 255, 0);
-    width: 150px;
-    border: 1px solid #fff;
-    padding: 0.5rem;
-    font-weight: 600;
-  }
-  main #order.order-block .order-box .order-contact .send {
-    background: #fff;
-    width: 150px;
-    padding: 0.5rem;
-    font-weight: 600;
-  }
-  main .benefits h3 {
-    text-align: center;
-    padding: 2rem;
-  }
   main .benefits .benefits-items {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-  }
-  main .benefits .benefits-items .benefit-item {
-    text-align: center;
-    padding: 1.5rem;
-    border-bottom: 1px solid #727171;
-    border-right: 1px solid #727171;
   }
 }
 /*# sourceMappingURL=styles.css.map */

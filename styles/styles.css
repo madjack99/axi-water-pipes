@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 535px;
+}
+
+header .angle {
+  width: 85px;
+  background: #01c1ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .angle a {
+  font-size: 2rem;
+  margin: auto;
+}
+
+header .header-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: url("../img/pipes-cover.jpg");
+  background-size: cover;
+  padding-left: 120px;
+}
+
+header .header-content .branding {
+  height: 170px;
+  padding: 35px 0;
+}
+
+header .header-content .branding .logo {
+  width: 200px;
+  height: 100px;
+  background: url("../img/axi-pipe.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .header-content h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+header .header-content h1 span {
+  color: #01c1ee;
+}
+
+header .header-content .header-buttons {
+  margin-top: 85px;
+}
+
+header .header-content .header-buttons .contact-number {
+  width: 340px;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  background: -webkit-gradient(linear, right top, left bottom, from(#01c1ee), to(#fff));
+  background: linear-gradient(to bottom left, #01c1ee, #fff);
+  margin-right: 20px;
+  border: 2px solid #01c1ee;
+}
+
+header .header-content .header-buttons .help {
+  width: 340px;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  background: -webkit-gradient(linear, left bottom, right top, from(#01c1ee), to(#fff));
+  background: linear-gradient(to top right, #01c1ee, #fff);
+}
+
+main .company-info h2 {
+  text-align: center;
+  padding: 1.5rem 0 1rem;
+}
+
+main .company-info p {
+  padding: 0 200px 30px 200px;
+}
+
+main .goods-carousel .carousel-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .goods-carousel .carousel-titles .title {
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+}
+
+main .goods-carousel .carousel-titles .title.active {
+  border-bottom: 3px solid #01c1ee;
+  font-weight: 600;
+}
+
+main .goods-carousel .m-smart-item,
+main .goods-carousel .m-evolution-item,
+main .goods-carousel .m-art-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50vw 50vw;
+      grid-template-columns: 50vw 50vw;
+}
+
+main .goods-carousel .m-smart-item .item-image,
+main .goods-carousel .m-evolution-item .item-image,
+main .goods-carousel .m-art-item .item-image {
+  background: url("../img/brass-pipe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main .goods-carousel .m-smart-item .item-description,
+main .goods-carousel .m-evolution-item .item-description,
+main .goods-carousel .m-art-item .item-description {
+  padding: 2rem 4rem 0 2rem;
+}
+
+main .goods-carousel .m-smart-item .item-description .pre-title,
+main .goods-carousel .m-evolution-item .item-description .pre-title,
+main .goods-carousel .m-art-item .item-description .pre-title {
+  color: #727171;
+}
+
+main .goods-carousel .m-smart-item .item-description h2,
+main .goods-carousel .m-evolution-item .item-description h2,
+main .goods-carousel .m-art-item .item-description h2 {
+  color: #01a8d0;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+main .goods-carousel .m-smart-item .item-description ul.item-specification,
+main .goods-carousel .m-evolution-item .item-description ul.item-specification,
+main .goods-carousel .m-art-item .item-description ul.item-specification {
+  margin: 2rem 0;
+}
+
+main .goods-carousel .m-smart-item .item-description ul.item-specification li,
+main .goods-carousel .m-evolution-item .item-description ul.item-specification li,
+main .goods-carousel .m-art-item .item-description ul.item-specification li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+main .goods-carousel .m-smart-item .item-description ul.item-specification li::after,
+main .goods-carousel .m-evolution-item .item-description ul.item-specification li::after,
+main .goods-carousel .m-art-item .item-description ul.item-specification li::after {
+  content: "";
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  border-bottom: 1px dotted #000;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main .goods-carousel .m-smart-item .item-description ul.item-specification li .specification,
+main .goods-carousel .m-evolution-item .item-description ul.item-specification li .specification,
+main .goods-carousel .m-art-item .item-description ul.item-specification li .specification {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+main .goods-carousel .m-smart-item .item-description ul.item-specification li .value,
+main .goods-carousel .m-evolution-item .item-description ul.item-specification li .value,
+main .goods-carousel .m-art-item .item-description ul.item-specification li .value {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+main .goods-carousel .m-smart-item .item-description .price,
+main .goods-carousel .m-evolution-item .item-description .price,
+main .goods-carousel .m-art-item .item-description .price {
+  display: inline-block;
+  float: left;
+  margin-right: 2rem;
+}
+
+main .goods-carousel .m-smart-item .item-description .price .actual-price,
+main .goods-carousel .m-evolution-item .item-description .price .actual-price,
+main .goods-carousel .m-art-item .item-description .price .actual-price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+main .goods-carousel .m-smart-item .item-description .price .old-price,
+main .goods-carousel .m-evolution-item .item-description .price .old-price,
+main .goods-carousel .m-art-item .item-description .price .old-price {
+  text-decoration: line-through;
+  color: #8c8a8a;
+}
+
+main .goods-carousel .m-smart-item .item-description .price .discount,
+main .goods-carousel .m-evolution-item .item-description .price .discount,
+main .goods-carousel .m-art-item .item-description .price .discount {
+  color: #0bd0fe;
+}
+
+main .goods-carousel .m-smart-item .item-description button,
+main .goods-carousel .m-evolution-item .item-description button,
+main .goods-carousel .m-art-item .item-description button {
+  background: #01c1ee;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+main .goods-carousel .m-evolution-item .item-image {
+  background: url("../img/tap.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main .goods-carousel .m-art-item .item-image {
+  background: url("../img/valve.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main .goods-carousel .m-evolution-item,
+main .goods-carousel .m-smart-item,
+main .goods-carousel .m-art-item {
+  display: none;
+}
+
+main .goods-carousel .m-evolution-item.visible,
+main .goods-carousel .m-smart-item.visible,
+main .goods-carousel .m-art-item.visible {
+  display: -ms-grid;
+  display: grid;
+}
+
+main .order-block {
+  margin-top: 1rem;
+  min-height: 200px;
+  background: -webkit-gradient(linear, right bottom, left top, from(#01c1ee), to(#fff));
+  background: linear-gradient(to left top, #01c1ee, #fff);
+}
+
+main .order-block .order-box {
+  padding: 1rem 0;
+  width: 400px;
+  margin: 0 auto;
+}
+
+main .order-block .order-box .order-contact {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .order-block .order-box .order-contact .tel {
+  background: rgba(255, 255, 255, 0);
+  width: 150px;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+main .order-block .order-box .order-contact .send {
+  background: #fff;
+  width: 150px;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+main .benefits h3 {
+  text-align: center;
+  padding: 2rem;
+}
+
+main .benefits .benefits-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+}
+
+main .benefits .benefits-items .benefit-item {
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #727171;
+  border-right: 1px solid #727171;
+}
+
+main footer {
+  margin-top: 1rem;
+  height: 50px;
+  background: #656464;
+  color: #fff;
+  padding-top: 10px;
+}
+
+main footer div {
+  margin: auto;
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  #main-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main-header .angle {
+    width: 100%;
+    background: #01c1ee;
+  }
+  #main-header .header-content {
+    padding-left: 20px;
+  }
+  #main-header .header-content h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  #main-header .header-content h1 span {
+    color: #01c1ee;
+  }
+  #main-header .header-content .header-buttons {
+    margin-top: 50px;
+  }
+  #main-header .header-content .header-buttons .contact-number {
+    width: 340px;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    background: -webkit-gradient(linear, right top, left bottom, from(#01c1ee), to(#fff));
+    background: linear-gradient(to bottom left, #01c1ee, #fff);
+    border: 2px solid #01c1ee;
+  }
+  #main-header .header-content .header-buttons .help {
+    width: 340px;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+    background: -webkit-gradient(linear, left bottom, right top, from(#01c1ee), to(#fff));
+    background: linear-gradient(to top right, #01c1ee, #fff);
+  }
+  main .company-info h2 {
+    text-align: center;
+    padding: 1.5rem 0 1rem;
+  }
+  main .company-info p {
+    padding: 0 50px 30px 50px;
+  }
+  main #carousel .m-smart-item,
+  main #carousel .m-evolution-item,
+  main #carousel .m-art-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+  }
+  main #order .order-box {
+    padding: 1rem 0.5rem;
+    width: 100%;
+    margin: 0;
+  }
+  main #order .order-box .order-contact {
+    padding-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .benefits .benefits-items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
